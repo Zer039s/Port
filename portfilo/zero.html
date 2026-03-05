@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="logo">Wayne Murray</div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+<main>
+    <section class="hero">
+
+        <img src="css/profile%20pic.JPG" class="profile-pic">
+
+        <h1>Wayne Murray</h1>
+        <h2>Software Engineer & Cybersecurity</h2>
+
+        <p class="hero-text">
+            I build secure software, explore cybersecurity, and enjoy solving complex problems.
+        </p>
+
+        <a href="project.html" class="hero-btn">View My Work</a>
+
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Java</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Cybersecurity Fundamentals</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+       <footer>
+        <a href="https://www.linkedin.com/in/wayne-murray-3a3590191/" target="_blank"><img class="info-logo" src="css/linkedln.jpg" alt="Linkedln"></a>
+           <a href="https://github.com/Zer039s" target="_blank"><img class="info-logo" src="css/github.svg" alt="Github"></a>
+           <a href="mailto:wayne.murray.tech@gmail.com" target="_blank"><img class="info-logo" src="css/gmail.png" alt="Gmail"></a>
+
+            <br>
+        Copyright by: Wayne Murray
+    </footer>
+</main>
+<script>
+
+    window.addEventListener("scroll", function(){
+
+        let navbar = document.querySelector(".navbar");
+
+        if(window.scrollY > 50){
+            navbar.classList.add("scrolled");
+        }
+        else{
+            navbar.classList.remove("scrolled");
+        }
+
+    });
+
+</script>
+</body>
+</html>
